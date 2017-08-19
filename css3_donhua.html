@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>css3_动画</title>
+	<style type="text/css">
+	div{
+		padding: 50px;
+		margin: 20px;
+	}
+		.div1{
+			width: 300px;
+			height:300px;
+			background:red;
+			position: relative;
+			animation: firstname 3s;
+		}
+		@keyframes firstname{
+			from{background: red;width:300px;}
+			to{background: #ca2;width:500px;} 
+		}
+		.div2{
+			width: 300px;
+			height:300px;
+			background:#cb2;
+			position: relative;
+			animation: twoname 5s;
+			animation-delay:3s;/*动画开始时间*/
+			animation-iteration-count:3;/*动画循环次数*/
+			animation-direction:alternate;/*动画下一周期逆向播放 默认是normal*/
+		}
+		@keyframes twoname{
+			0% {background: #cb2; top: 0; left: 0;}
+			25%{background: #ac2; top: 0; left: 200px;}
+			50%{ background: #ce2; top:200px; left: 200px; }
+			75%{background: #dc2; top:200px; left: 0;}
+			100%{background: #cb2; top: 0;left: 0;}
+		}
+	</style>
+</head>
+<body>
+<div class="div1">CSS3 @keyframes 规则
+如需在 CSS3 中创建动画，您需要学习 @keyframes 规则。
+@keyframes 规则用于创建动画。在 @keyframes 中规定某项 CSS 样式，就能创建由当前样式逐渐改为新样式的动画效果。</div>
+<div class="div2">动画是使元素从一种样式逐渐变化为另一种样式的效果。
+您可以改变任意多的样式任意多的次数。
+请用百分比来规定变化发生的时间，或用关键词 "from" 和 "to"，等同于 0% 和 100%。
+0% 是动画的开始，100% 是动画的完成。
+为了得到最佳的浏览器支持，您应该始终定义 0% 和 100% 选择器。</div>
+</body>
+</html>

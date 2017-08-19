@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>css3-2D</title>
+	<style type="text/css">
+		div{
+		     width: 300px;
+		     height: 300px;
+		     float: left;
+		     /*居中*/
+		     /*left: 50%;
+		     top: 50%;
+		     margin: -150px;
+		     position: fixed;*/
+		     position: relative;
+		     background-color: #ac2;
+		     color: #000; 
+		     padding: 50px; 
+		     margin: 100px;
+		     /*position: absolute;*/ 
+		}
+		.div1{
+			background-color: #ddc;
+			position: absolute;
+			clear: both;
+			transform:translate(50px,100px);
+			-ms-transform: translate(50px,100px);		/* IE 9 */
+            -webkit-transform: translate(50px,100px);	/* Safari and Chrome */
+            -o-transform: translate(50px,100px);		/* Opera */
+            -moz-transform: translate(50px,100px);		/* Firefox */
+		}
+		.div2{
+			background-color: #ddc;
+			transform: rotate(30deg);
+			-ms-transform: rotate(30deg);		/* IE 9 */
+            -webkit-transform: rotate(30deg);	/* Safari and Chrome */
+            -o-transform: rotate(30deg);		/* Opera */
+            -moz-transform: rotate(30deg);		/* Firefox */
+			
+		}
+		.div3{
+			background-color: #ddc;
+			transform: scale(1.5,1);
+		}
+		.div4{
+			box-shadow: 10px 10px 20px 0px #ad2;
+			background-color: #ddc;
+			transform:skew(5deg,10deg);
+		}
+		.div5{
+			background-color: #ddc;
+			transform:matrix(0,1,-1,0.5,0,0);
+		}
+	</style>
+</head>
+<body>
+   <div></div>
+   <div class="div1">translate() 方法
+   通过 translate() 方法，元素从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标） 位置参数：</div>
+  
+   <div class="div2">通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转</div>
+   <div class="div3">通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数：</div>
+   <div class="div4">通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数：</div>
+   <div class="div5">matrix() 方法把所有 2D 转换方法组合在一起。
+matrix() 方法需要六个参数，包含数学函数，允许您：旋转、缩放、移动以及倾斜元素。</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>css3_过渡</title>
+	<style type="text/css">
+		p,h1,h2,h3,div,ul,li,form,span,table,ol{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		div{
+			width: 200px;
+			height: 100px;
+			background: #c20;
+			transition:width 2s, height 2s, transform 2s;
+		}
+		#div1:hover{
+			width: 350px; 
+
+		}
+		#div2:hover{
+			width: 350px;
+			height: 350px;
+			transform: rotate(180deg);
+		}
+	</style>
+</head>
+<body>
+<p>CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。
+要实现这一点，必须规定两项内容：
+规定您希望把效果添加到哪个 CSS 属性上
+规定效果的时长</p>
+<div id="div1">单项改变</div>
+<div id="div2">d多项改变</div>
+</body>
+</html>

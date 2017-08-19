@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 300px;
+			height: 300px;
+			float: left;
+			margin: 50px;
+			padding: 10px;
+			border:solid  2px #ac2;
+			background: transparent;
+		}
+		h3{
+			display: block;
+			width: 100%;
+			height: 20px;
+			line-height: 20px;
+			color: #ca2;
+		}
+		#div1{
+			list-style: none;
+			clear: both;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+<!-- css3边框 -->
+
+<!-- 1.圆角 -->
+    <!-- border-top-right-radius: 10em 20em; -->
+<div id="div1">
+    <h3>css3边框</h3>
+	<div style="border-radius: 50% 0px 50% 10px">通过 CSS3，您能够创建圆角边框，向矩形添加阴影，使用图片来绘制边框 - 并且不需使用设计软件，比如 PhotoShop。在本章中，您将学到以下边框属性：</div>
+	<!-- 2.阴影 -->
+	<div style="box-shadow: 15px 15px 10px 0px #ac8; ">通过 CSS3，您能够创建圆角边框，向矩形添加阴影，使用图片来绘制边框 - 并且不需使用设计软件，比如 PhotoShop。在本章中，您将学到以下边框属性：</div>
+	<!-- 3.边框图片 -->
+	<div style=" border: 25px; border-image:url(http://p2.so.qhmsg.com/bdr/_240_/t010006a614563398e7.jpg) 25 25 round;">通过 CSS3，您能够创建圆角边框，向矩形添加阴影，使用图片来绘制边框 - 并且不需使用设计软件，比如 PhotoShop。在本章中，您将学到以下边框属性：</div>
+</div>
+<!-- css3背景 -->
+<div id="div1">
+   <h3>css3背景</h3>
+   <!-- background-size: 100% 100%; -->
+   <div style="background: url(http://pic2.ooopic.com/11/49/25/10bOOOPIC99.jpg); background-size: 100% 100%; color: #fff; font-size: 20px; font-weight: bold;">CSS3 包含多个新的背景属性，它们提供了对背景更强大的控制。
+   在本章，您将学到以下背景属性：
+   background-size
+   background-origin
+   您也将学到如何使用多重背景图片。</div>
+
+   <!-- background-origin:border-box padding-box content-box属性 -->	
+   <div style="background: url(http://pic2.ooopic.com/11/49/25/10bOOOPIC99.jpg); background-size: 100% 100%; color: #fff; font-size: 20px; font-weight: bold; background-origin: border-box;">background-origin 属性规定背景图片的定位区域。
+背景图片可以放置于 content-box、padding-box 或 border-box 区域。</div>
+
+<!-- 多重背景图片 -->
+<div style="background: url(http://pic2.ooopic.com/11/49/25/10bOOOPIC99.jpg) 50%,url(,https://ps.ssl.qhimg.com/sdmt/166_135_100/t017b8efe9c28e8869b.jpg); ">background-origin 属性规定背景图片的定位区域。
+背景图片可以放置于 content-box、padding-box 或 border-box 区域。</div>
+</div>
+<!-- CSS3 文本效果 -->
+<div id="div1">
+   <h3>css3文本效果</h3>
+   <!-- text-shadow:左 右 模糊度 颜色； -->
+	   <div style="text-shadow:5px 5px 2px #ca2
+	   ; ">CSS3 包含多个新的文本特性。
+	在本章中，您将学到如下文本属性：
+	text-shadow
+	word-wrap</div>
+
+	<!-- word-wrap:break-word;CSS3 自动换行 -->
+	<div>
+	<p style="width: 14em; border: 2px solid #dd2; word-wrap:break-word; ">
+		Internet Explorer 10、Firefox、Chrome、Safari 以及 Opera 支持 text-shadow 属性。
+	所有主流浏览器都支持 word-wrap 属性。
+	注释：Internet Explorer 9 以及更早的版本，不支持 text-shadow 属性。
+	</p>
+	</div>
+
+	<!-- css3字体 -->
+	<div>
+	<p style="border: 2px solid #dd2; ">
+		在style里引入你要使用的字体，如<span style="color: red;">@font-face
+{
+font-family: myFirstFont;
+src: url('Sansation_Light.ttf'),
+     url('Sansation_Light.eot'); /* IE9+ */
+}</span>
+	</p>
+	<p>在要使用该字体的段落中，用font-family引入如<span style="color: red;>font-family:myFirstFont;</span></p>
+	</div>
+
+
+
+</div>
+</body>
+
+</html>
